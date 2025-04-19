@@ -9,5 +9,5 @@ npx tailwindcss -i ./tailwindcss.css -o ./dist/output.css --watch
 
 github.html
 
-![img.png](\dist\images\new-github.png)
+![img.png](dist/images/new-github.png)
 
