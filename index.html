@@ -21,7 +21,7 @@
                     </svg>
                 </a>
                 <!-- search -->
-                <div class="relative">
+                <div class="relative hidden lg:block">
                     <input type="text"
                         class="rounded bg-gray-900 border border-gray-600 placeholder-gray-400 w-72 px-3 py-1"
                         placeholder="Type Words to Search...">
@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <!-- nav-a -->
-                <ul class="flex items-center font-semibold space-x-4">
+                <ul class="items-center font-semibold space-x-4 hidden lg:flex">
                     <li>
                         <a href="#" class="hover:text-gray-400">Pull requests</a>
                     </li>
@@ -80,7 +80,7 @@
             </div>
         </nav>
 
-        <div class="repo-info bg-gray-100 flex items-center justify-between px-8 py-4">
+        <div class="repo-info bg-gray-100 flex flex-col lg:flex-row items-center justify-between px-8 py-4">
             <div class="flex items-center">
                 <svg aria-hidden="true" class="w-4 fill-current text-gray-600" viewBox="0 0 16 16"
                     data-view-component="true">
@@ -97,7 +97,7 @@
                 <div class="flex items-center p-1 h-4 border border-gray-300 rounded-xl text-gray-600 text-xs ml-2">
                     Public</div>
             </div>
-            <div class="flex space-x-2">
+            <div class="flex space-x-2 mt-4 lg:mt-0">
                 <div class="flex text-sm shadow-sm h-7">
                     <button
                         class="flex items-center border border-gray-300 rounded-lg rounded-r-none px-2 py-1 space-x-2">
@@ -187,7 +187,7 @@
                     <div class="flex items-center ml-2 bg-gray-200 px-2 rounded-lg">72</div>
                 </a>
             </li>
-            <li class="font-semibold">
+            <li class="font-semibold hidden lg:block">
                 <a class="flex items-center px-3 pb-3 text-gray-700 hover:border-gray-300" href="#">
                     <svg class="w-4 h-4 fill-current" aria-hidden="true" viewBox="0 0 16 16" version="1.1"
                         data-view-component="true" class="octicon octicon-play UnderlineNav-octicon d-none d-sm-inline">
@@ -198,7 +198,7 @@
                     <span class="ml-2">Actions</span>
                 </a>
             </li>
-            <li class="font-semibold">
+            <li class="font-semibold hidden lg:block">
                 <a class="flex items-center px-3 pb-3 text-gray-700 hover:border-gray-300" href="#">
                     <svg class="w-4 h-4" aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true"
                         class="octicon octicon-table UnderlineNav-octicon d-none d-sm-inline">
@@ -209,7 +209,7 @@
                     <span class="ml-2">Projects</span>
                 </a>
             </li>
-            <li class="font-semibold">
+            <li class="font-semibold hidden lg:block">
                 <a class="flex items-center px-3 pb-3 text-gray-700 hover:border-gray-300" href="#">
                     <svg class="w-4 h-4" aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true"
                         class="octicon octicon-book UnderlineNav-octicon d-none d-sm-inline">
@@ -220,7 +220,7 @@
                     <span class="ml-2">Wiki</span>
                 </a>
             </li>
-            <li class="font-semibold">
+            <li class="font-semibold hidden lg:block">
                 <a class="flex items-center px-3 pb-3 text-gray-700 hover:border-gray-300" href="#">
                     <svg class="w-4 h-4" class="w-4 h-4" aria-hidden="true" viewBox="0 0 16 16" version="1.1"
                         data-view-component="true"
@@ -232,7 +232,7 @@
                     <span class="ml-2">Security</span>
                 </a>
             </li>
-            <li class="font-semibold">
+            <li class="font-semibold hidden lg:block">
                 <a class="flex items-center px-3 pb-3 text-gray-700 hover:border-gray-300" href="#">
                     <svg class="w-4 h-4" aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true"
                         class="octicon octicon-graph UnderlineNav-octicon d-none d-sm-inline">
@@ -243,7 +243,7 @@
                     <span class="ml-2">Insights</span>
                 </a>
             </li>
-            <li class="font-semibold">
+            <li class="font-semibold hidden lg:block">
                 <a class="flex items-center  px-3 pb-3 text-gray-700 hover:border-gray-300" href="#">
                     <svg class="w-4 h-4" aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true"
                         class="octicon octicon-gear UnderlineNav-octicon d-none d-sm-inline">
@@ -258,8 +258,8 @@
         <!-- end repo-nav -->
     </div>
 
-    <div class="container mx-auto my-8 px-4 flex">
-        <div class="file-contailer w-3/4 mr-8">
+    <div class="container mx-auto my-8 px-4 flex flex-col lg:flex-row">
+        <div class="file-contailer w-full lg:w-3/4 lg:mr-8">
             <div class="branch-info flex justify-between items-center">
                 <!-- branch左侧 -->
                 <div class="branch flex justify-between space-x-4">
@@ -278,7 +278,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                         </svg>
                     </div>
-                    <div class="flex items-center space-x-1">
+                    <div class="items-center space-x-1 hidden lg:flex">
                         <svg class="w-4 h-4" aria-hidden="true" focusable="false" class="octicon octicon-git-branch"
                             viewBox="0 0 16 16" fill="currentColor" display="inline-block" overflow="visible"
                             style="vertical-align:text-bottom">
@@ -290,7 +290,7 @@
                         <span class="text-sm">branches</span>
                     </div>
 
-                    <div class="flex items-center space-x-1">
+                    <div class="items-center space-x-1 hidden lg:flex">
                         <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true"
                             class="w-4 h-4 fill-current">
                             <path fill-rule="evenodd"
@@ -333,18 +333,18 @@
                     <a href="#" class="hover:underline"><span class="font-semibold">zqlit</span></a>
                     <a href="#" class="hover:underline hover:text-blue-500"><span>Merge branch 'v2-dev' into
                             v2</span></a>
-                    <a href="#" class="hover:underline hover:text-blue-500"><span class="ml-1">(</span><span
+                    <a href="#" class="hover:underline hover:text-blue-500 hidden lg:block"><span class="ml-1">(</span><span
                             class="text-blue-500">#5478</span><span>)</span></a>
                 </div>
                 <div class="commit-date flex items-center space-x-2">
-                    <svg class="w-4 h-4 fill-current text-green-600" aria-hidden="true" focusable="false"
+                    <svg class="w-4 h-4 fill-current text-green-600 hidden lg:block" aria-hidden="true" focusable="false"
                         class="octicon octicon-check" viewBox="0 0 16 16" fill="currentColor" display="inline-block"
                         overflow="visible" style="vertical-align: text-bottom;">
                         <path
                             d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z">
                         </path>
                     </svg>
-                    <a href="#"><span class="text-gray-600 text-xs">a7c89c8</span></a>
+                    <a href="#"><span class="text-gray-600 text-xs hidden lg:block">a7c89c8</span></a>
                     <a href="#"><span class="text-gray-600">yesterday</span></a>
                     <a href="#" class="commit-value flex items-center space-x-1 font-sans">
                         <svg aria-hidden="true" focusable="false" class="octicon octicon-history" viewBox="0 0 16 16"
@@ -637,12 +637,12 @@
             <!-- readme-content end-->
         </div>
 
-        <div class="sideber w-1/4">
+        <div class="sideber w-full lg:w-1/4 mt-4 lg:mt-0">
             <div class="about">
                 <div class="bout-title font-semibold">
                     About
                 </div>
-                <div class="about-content font-sans mt-2">
+                <div class="about-content font-sans mt-4 mb-4 lg:mb-0 lg:mt-2 ">
                     github的demo,使用tailwindcss构建
                 </div>
                 <a class="url flex items-center mt-2 space-x-2" href="#">
@@ -809,12 +809,7 @@
                                 <div class="text-sm font-semibold">Other</div>
                                 <div class="text-sm">77.0%</div>
                             </div>
-
                         </div>
-
-                  
-
-             
                     </div>
                     <!-- languages end -->
 
@@ -824,6 +819,30 @@
         </div>
     </div>
     <!-- container end -->
+    <footer class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-12 border-t border-gray-300 text-xs">
+        <div class="flex items-center space-x-8">
+            <div>&copy; 2025 Github,Inc.</div>
+            <a class="text-blue-600 hover:underline" href="#">Terms</a>
+            <a class="text-blue-600 hover:underline" href="#">Privacy</a>
+            <a class="text-blue-600 hover:underline" href="#">Security</a>
+            <a class="text-blue-600 hover:underline" href="#">Status</a>
+            <a class="text-blue-600 hover:underline" href="#">Docs</a>
+        </div>
+        <div class="hidden lg:block">
+            <svg class="w-6 fill-current text-gray-400 hover:text-gray-600" aria-hidden="true" viewBox="0 0 16 16" version="1.1" data-view-component="true">
+                <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+            </svg>
+        </div>
+        <div class="flex items-center space-x-8 mt-4 lg:mt-0">
+            <a href="#" class="text-blue-600 hover:underline">Contact Github</a>
+            <a href="#" class="text-blue-600 hover:underline">Pricing</a>
+            <a href="#" class="text-blue-600 hover:underline">Api</a>
+            <a href="#" class="text-blue-600 hover:underline">Training</a>
+            <a href="#" class="text-blue-600 hover:underline">Blog</a>
+            <a href="#" class="text-blue-600 hover:underline">About</a>
+        </div>
+    </footer>
+    <!-- footer end -->
 </body>
 
 </html>
